@@ -92,3 +92,31 @@ def user(username):
     user = User.query.filter_by(username=username).first_or_404()
 
     return render_template('user.html', user=user)
+
+###################
+# TRAINING ROUTES #
+###################
+
+@app.route('/intro')
+def intro():
+    return render_template('intro.html', title='Business User Training')
+
+@app.route('/fruit_basket')
+def fruit_basket():
+    return render_template('fruit_basket.html', title='Fruit Basket')
+
+@app.route('/agenda_airports')
+def agenda_airports():
+    return render_template('agenda_airports.html', title='Fruit Basket')
+
+@app.route('/airports')
+def airports():
+    return render_template('airports.html', title='Airports')
+
+@app.route('/flights')
+def flights():
+    return render_template('flights.html', title='Flights')
+
+@app.route('/dashboards')
+def dashboards():
+    return render_template('dashboards.html', title='Dashboards')

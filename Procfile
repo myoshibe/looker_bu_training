@@ -1,1 +1,1 @@
-web: flask db upgrade; gunicorn heroku_flask_base:app
+web: flask db upgrade; gunicorn looker_bu_training:app
